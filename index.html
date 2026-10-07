@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ML Championship Tournament Registration</title>
+</head>
+<body style="background-color: #121212;">
+	<h1 style="text-align: center; color: #e0e0e0; font-family: sans-serif;">MLBB Tournament Registration</h1>
+	<p style="text-align: center; color: #888888; font-family: sans-serif;">Barangay E-Sports Community Championship</p>
+	<hr width="30%">
+
+	<form style="max-width: 500px; margin: 40px auto; padding: 20px; background-color: #1e1e1e; color: #e0e0e0; font-family: sans-serif; border: 1px solid #333333; border-radius: 10px;">
+		<label for="teamname" style="color: #e0e0e0; font-family: sans-serif; display: block; margin-bottom: 5px;">Team Name:</label>
+		<input 
+			type="text"
+			id="teamname"
+			name="teamname"
+			placeholder="Enter your team name"
+			style="width: 100%; padding: 10px; background-color: #121212; color: #e0e0e0; border: 1px solid #333333; border-radius: 10px; box-sizing: border-box; font-family: inherit;"
+			required>
+		<br><br>
+
+		<label for="teamcaptain" style="color: #e0e0e0; font-family: sans-serif; display: block; margin-bottom: 5px;">Team Captain:</label>
+		<input 
+			type="text"
+			id="teamcaptain"
+			name="teamcaptain"
+			placeholder="Enter team captain name"
+			style="width: 100%; padding: 10px; background-color: #121212; color: #e0e0e0; border: 1px solid #333333; border-radius: 10px; box-sizing: border-box; font-family: inherit;"
+			required>
+		<br><br>
+
+		<label for="email" style="color: #e0e0e0; font-family: sans-serif; display: block; margin-bottom: 5px;">Email Address:</label>
+		<input 
+			type="email"
+			id="email"
+			name="email"
+			placeholder="example@email.com"
+			style="width: 100%; padding: 10px; background-color: #121212; color: #e0e0e0; border: 1px solid #333333; border-radius: 10px; box-sizing: border-box; font-family: inherit;"
+			required>
+		<br><br>
+
+		<label for="mobile" style="color: #e0e0e0; font-family: sans-serif; display: block; margin-bottom: 5px;">Mobile Number:</label>
+		<input 
+			type="tel"
+			id="mobile"
+			name="mobile"
+			placeholder="9123456789"
+			pattern="[0-9]{10}"
+            maxlength="10"
+			style="width: 100%; padding: 10px; background-color: #121212; color: #e0e0e0; border: 1px solid #333333; border-radius: 10px; box-sizing: border-box; font-family: inherit;"
+			required>
+		<br><br>
+
+		<select id="ml-rank" name="rank" required style="width: 100%; padding: 10px; padding-left: 5px; background-color: #121212; color: #e0e0e0; border: 1px solid #333333; border-radius: 10px; box-sizing: border-box; font-family: inherit; cursor: pointer;">
+			<option value="" disabled selected>ML Rank</option>
+            <option value="warrior">Warrior</option>
+            <option value="elite">Elite</option>
+            <option value="master">Master</option>
+			<option value="grandmaster">Grandmaster</option>
+			<option value="epic">Epic</option>
+			<option value="legend">Legend</option>
+			<option value="mythic">Mythic</option>
+        </select>
+		<br><br>
+
+		<label>Preferred Role:</label>
+		<br><br>
+
+        <input
+            type="radio"
+            id="tank"
+            name="role"
+            value="Tank"
+			style="cursor: pointer;"
+			required>
+        <label for="tank" style="cursor: pointer;">Tank</label>
+		<br><br>
+
+        <input
+            type="radio"
+            id="mage"
+            name="role"
+            value="Mage"
+			style="cursor: pointer;"
+			required>
+        <label for="mage" style="cursor: pointer;">Mage</label>
+		<br><br>
+
+		<input
+            type="radio"
+            id="marksman"
+            name="role"
+            value="Marksman"
+			style="cursor: pointer;"
+			required>
+        <label for="marksman" style="cursor: pointer;">Marksman</label>
+		<br><br>
+
+		<input
+            type="radio"
+            id="assassin"
+            name="role"
+            value="Assassin"
+			style="cursor: pointer;"
+			required>
+        <label for="assassin" style="cursor: pointer;">Assassin</label>
+		<br><br>
+
+		<input
+            type="radio"
+            id="fighter"
+            name="role"
+            value="Fighter"
+			style="cursor: pointer;"
+			required>
+        <label for="fighter" style="cursor: pointer;">Fighter</label>
+		<br><br>
+
+		<input
+            type="radio"
+            id="support"
+            name="role"
+            value="Support"
+			style="cursor: pointer;"
+			required>
+        <label for="support" style="cursor: pointer;">Support</label>
+        <br><br>
+
+		<p>Main Heroes (Choose Multiple):</p>
+		<input
+            type="checkbox"
+            id="layla"
+            name="heroes[]"
+			value="Layla"
+			style="cursor: pointer;">
+		<label for="layla" style="cursor: pointer;">Layla</label>
+        <br><br>
+
+		<input
+            type="checkbox"
+            id="miya"
+            name="heroes[]"
+			value="Miya"
+			style="cursor: pointer;">
+		<label for="miya" style="cursor: pointer;">Miya</label>
+        <br><br>
+
+		<input
+            type="checkbox"
+            id="balmond"
+            name="heroes[]"
+			value="Balmond"
+			style="cursor: pointer;">
+		<label for="balmond" style="cursor: pointer;">Balmond</label>
+        <br><br>
+
+		<input
+            type="checkbox"
+            id="alucard"
+            name="heroes[]"
+			value="Alucard"
+			style="cursor: pointer;">
+		<label for="alucard" style="cursor: pointer;">Alucard</label>
+        <br><br>
+
+		<input
+            type="checkbox"
+            id="tigreal"
+            name="heroes[]"
+			value="Tigreal"
+			style="cursor: pointer;">
+		<label for="tigreal" style="cursor: pointer;">Tigreal</label>
+        <br><br>
+
+		<input
+            type="checkbox"
+            id="kagura"
+            name="heroes[]"
+			value="Kagura"
+			style="cursor: pointer;">
+		<label for="kagura" style="cursor: pointer;">Kagura</label>
+        <br><br>
+
+		<label for="team_intro" style="display: block; color: #e0e0e0; font-family: sans-serif; margin-bottom: 5px;">Team Introduction:</label>
+		<textarea 
+  			id="team_intro" 
+ 		 	name="team_intro" 
+  			rows="4" 
+  			placeholder="Tell us about your squad..." 
+  			style="width: 100%; padding: 10px; background-color: #121212; color: #e0e0e0; font-family: sans-serif; box-sizing: border-box; resize: none; border: 1px solid #333333; border-radius: 10px;"></textarea>
+		<br><br>
+
+		<input type="submit" value="REGISTER TEAM" style="width: 100%; padding: 12px; background-color: #e0e0e0; color: #121212; border: none; border-radius: 10px; font-weight: bold; font-size: 16px; cursor: pointer; font-family: inherit;">
+	</form>
+</body>
+</html>
